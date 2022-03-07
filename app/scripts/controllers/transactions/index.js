@@ -387,10 +387,6 @@ export default class TransactionController extends EventEmitter {
     txId,
     { maxFeePerGas, maxPriorityFeePerGas, gasLimit },
   ) {
-    if (!this._checkIfTxStatusIsUnapproved(txId)) {
-      return;
-    }
-
     const previousGasParams = {
       previousGas: {
         maxFeePerGas,
