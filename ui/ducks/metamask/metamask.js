@@ -209,7 +209,7 @@ const toHexWei = (value, expectHexWei) => {
 };
 
 // Action Creators
-export function updateTransaction({
+export function updateGasFees({
   gasPrice,
   gasLimit,
   maxPriorityFeePerGas,
