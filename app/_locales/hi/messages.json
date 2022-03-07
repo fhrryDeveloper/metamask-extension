@@ -188,6 +188,9 @@
   "aggregatorFeeCost": {
     "message": "एग्रीगेटर नेटवर्क शुल्क"
   },
+  "airgapVaultTutorial": {
+    "message": " (ट्यूटोरियल)"
+  },
   "alertDisableTooltip": {
     "message": "इसे \"सेटिंग > अलर्ट\" में बदला जा सकता है"
   },
@@ -401,6 +404,14 @@
   "cancelSpeedUp": {
     "message": "किसी लेन-देन को रद्द या तेज करें।"
   },
+  "cancelSpeedUpLabel": {
+    "message": "यह गैस शुल्क मूल को $1 करेगा।",
+    "description": "$1 is text 'replace' in bold"
+  },
+  "cancelSpeedUpTransactionTooltip": {
+    "message": "लेनदेन को $1 करने के लिए गैस शुल्क में कम से कम 10% की वृद्धि होनी चाहिए ताकि नेटवर्क द्वारा इसे मान्यता प्राप्त हो सके।",
+    "description": "$1 is string 'cancel' or 'speed up'"
+  },
   "cancellationGasFee": {
     "message": "रद्दीकरण गैस शुल्क"
   },
@@ -428,6 +439,10 @@
   },
   "close": {
     "message": "बंद करें"
+  },
+  "collectibleAddressError": {
+    "message": "यह टोकन एक NFT है। $1 पर जोड़ें",
+    "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
   },
   "confirm": {
     "message": "पुष्टि करें"
@@ -562,6 +577,9 @@
   },
   "contractInteraction": {
     "message": "अनुबंध इंटरैक्शन"
+  },
+  "convertTokenToNFTDescription": {
+    "message": "हमने पाया है कि यह संपत्ति एक NFT है। Metamask के पास अब NFT के लिए पूर्ण देशी समर्थन है। क्या आप इसे अपनी टोकन सूची से हटाकर NFT के रूप में जोड़ना चाहते हैं?"
   },
   "copiedExclamation": {
     "message": "कॉपी किया गया!"
@@ -706,6 +724,10 @@
   "details": {
     "message": "विस्तृत जानकारी"
   },
+  "disabledGasOptionToolTipMessage": {
+    "message": "मूल गैस शुल्क से न्यूनतम 10% की वृद्धि को पूरा नहीं करने के कारण “$1” को अक्षम कर दिया गया है।",
+    "description": "$1 is gas estimate type which can be market or aggressive"
+  },
   "disconnect": {
     "message": "डिस्कनेक्ट करें"
   },
@@ -759,6 +781,9 @@
   },
   "editAddressNickname": {
     "message": "पता उपनाम संपादित करें"
+  },
+  "editCancellationGasFeeModalTitle": {
+    "message": "रद्दीकरण गैस शुल्क संपादित करें"
   },
   "editContact": {
     "message": "संपर्क संपादित करें"
@@ -879,8 +904,27 @@
   "editPermission": {
     "message": "अनुमति संपादित करें"
   },
+  "editSpeedUpEditGasFeeModalTitle": {
+    "message": "स्पीड अप गैस फी संपादित करें"
+  },
   "enableAutoDetect": {
     "message": " ऑटो डिटेक्ट इनेबल करें"
+  },
+  "enableEIP1559V2": {
+    "message": "उन्नत गैस शुल्क UI इनेबल करें"
+  },
+  "enableEIP1559V2AlertMessage": {
+    "message": "गैस शुल्क आकलन और अनुकूलन कैसे काम करता है, हमने इसे अपडेट किया है।"
+  },
+  "enableEIP1559V2ButtonText": {
+    "message": "सेटिंग्स में उन्नत गैस शुल्क UI चालू करें"
+  },
+  "enableEIP1559V2Description": {
+    "message": "गैस आकलन और अनुकूलन कैसे काम करता है, हमने इसे अपडेट किया है। यदि आप नए गैस अनुभव का उपयोग करना चाहते हैं तो चालू करें। $1",
+    "description": "$1 here is Learn More link"
+  },
+  "enableEIP1559V2Header": {
+    "message": "नया गैस अनुभव"
   },
   "enableFromSettings": {
     "message": " इसे सेटिंग्स से इनेबल करें।"
@@ -1071,6 +1115,26 @@
     "message": "से",
     "description": "Part of the sentence describing when and where snap was added"
   },
+  "flaskWelcomeUninstall": {
+    "message": "आपको यह एक्सटेंशन अनइंस्टॉल कर देना चाहिए",
+    "description": "This request is shown on the Flask Welcome screen. It is intended for non-developers, and will be bolded."
+  },
+  "flaskWelcomeWarning1": {
+    "message": "फ्लास्क डेवलपर्स के लिए नए अस्थिर API के साथ प्रयोग करने के लिए है। जब तक कि आप डेवलपर या बीटा टेस्टर नहीं हैं, $1।",
+    "description": "This is a warning shown on the Flask Welcome screen, intended to encourage non-developers not to proceed any further. $1 is the bolded message 'flaskWelcomeUninstall'"
+  },
+  "flaskWelcomeWarning2": {
+    "message": "हम इस एक्टेंशन की सुरक्षा और स्थिरता की गांरटी नहीं देते हैं। फ्लास्क द्वारा पेश किए गए नए API फिशिंग हमलों के खिलाफ सख्त नहीं हैं, जिसका मतलब है कि कोई भी साइट या स्नैप जिसके लिए फ्लास्क की आवश्यकता होती है, आपकी संपत्ति को चुराने का एक दुर्भावनापूर्ण प्रयास हो सकता है।",
+    "description": "This explains the risks of using MetaMask Flask"
+  },
+  "flaskWelcomeWarning3": {
+    "message": "सभी फ्लास्क API प्रयोगात्मक हैं। वे बिना किसी सूचना के बदले या हटाए जा सकते हैं, या फिर वे स्थायी MetaMask में माइग्रेट किए बिना अनिश्चितकाल तक फ्लास्क में ही रह सकते हैं। उनका प्रयोग अपने जोखिम में करें।",
+    "description": "This message warns developers about unstable Flask APIs"
+  },
+  "flaskWelcomeWarningAcceptButton": {
+    "message": "मैं जोखिमों को स्वीकार करता हूं",
+    "description": "this text is shown on a button, which the user presses to confirm they understand the risks of using Flask"
+  },
   "followUsOnTwitter": {
     "message": "ट्विटर पर हमें फॉलो करें"
   },
@@ -1208,6 +1272,9 @@
   "grantedToWithColon": {
     "message": "को प्रदान की गई:"
   },
+  "gwei": {
+    "message": "GWEI"
+  },
   "happyToSeeYou": {
     "message": "हम आपसे मिलकर खुश हैं।"
   },
@@ -1289,6 +1356,18 @@
   "importMyWallet": {
     "message": "मेरा वॉलेट आयात करें"
   },
+  "importNFT": {
+    "message": "NFT आयात करें"
+  },
+  "importNFTAddressToolTip": {
+    "message": "OpenSea पर, उदाहरण के लिए, विवरण के अंदर NFT पृष्ठ पर, 'अनुबंध पता ' लेबल वाला एक नीला हाइपरलिंक्ड मान है। यदि आप इसपर क्लिक करते हैं, तो यह आपको Etherscan पर अनुबंध के पते पर ले जाएगा; उस पृष्ठ के ऊपर बाईं ओर, 'अनुबंध' लेबल वाला एक आइकन, और दाईं ओर, अक्षरों व संख्याओं की एक लंबी श्रृंखला होनी चाहिए। यह उस अनुबंध का पता है जिसने आपका NFT बनाया है। पते के दाईं ओर 'कॉपी' आइकन पर क्लिक करें, और यह आपके क्लिपबोर्ड में आ जाएगा।"
+  },
+  "importNFTPage": {
+    "message": "NFT पृष्ठ आयात करें"
+  },
+  "importNFTTokenIdToolTip": {
+    "message": "चूंकि कोई भी दो NFT समान नहीं होते हैं, संग्रहणीय आईडी एक विशिष्ट पहचान है। फिर से, OpenSea पर यह संख्या 'विवरण' के अंदर होती है। इसे कहीं लिख लें, या अपने क्लिपबोर्ड पर कॉपी करें।"
+  },
   "importNFTs": {
     "message": "NFT आयात करें"
   },
@@ -1341,6 +1420,9 @@
   },
   "invalidAddressRecipientNotEthNetwork": {
     "message": "ETH नेटवर्क नहीं, लोअरकेस में सेट करें"
+  },
+  "invalidAssetType": {
+    "message": "यह संपत्ति एक NFT है और इसे NFT टैब के अंदर NFT आयात करें पृष्ठ पर दोबारा जोड़ने की आवश्यकता है"
   },
   "invalidBlockExplorerURL": {
     "message": "अमान्य ब्लॉक एक्सप्लोरर URL"
@@ -1527,6 +1609,9 @@
   "mainnet": {
     "message": "Ethereum Mainnet"
   },
+  "mainnetToken": {
+    "message": "यह पता एक ज्ञात Ethereum Mainnet टोकन पते से मेल खाता है। जिस टोकन को आप जोड़ने की कोशिश कर रहे हैं उसके लिए अनुबंध पते और नेटवर्क को दोबारा जांचें।"
+  },
   "makeAnotherSwap": {
     "message": "एक नया स्वैप बनाएं"
   },
@@ -1677,6 +1762,9 @@
   },
   "networkDetails": {
     "message": "नेटवर्क विवरण"
+  },
+  "networkIsBusy": {
+    "message": "नेटवर्क व्यस्त है। गैस कीमतें अधिक हैं और आकलन सटीक नहीं है।"
   },
   "networkName": {
     "message": "नेटवर्क का नाम"
@@ -2201,6 +2289,9 @@
   "removeNFT": {
     "message": "NFT हटाएं"
   },
+  "replace": {
+    "message": "बदलें"
+  },
   "requestsAwaitingAcknowledgement": {
     "message": "अनुरोधों के स्वीकार किए जाने की प्रतीक्षा की जा रही है"
   },
@@ -2407,6 +2498,9 @@
   "sendTokens": {
     "message": "टोकन भेजें"
   },
+  "sendingDisabled": {
+    "message": "ERC-1155 NFT संपत्तियों को भेजना अभी समर्थित नहीं है।"
+  },
   "sendingNativeAsset": {
     "message": "$1 भेजा जा रहा है",
     "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
@@ -2601,6 +2695,9 @@
   },
   "storePhrase": {
     "message": "इस फ्रेज को 1Password जैसे किसी पासवर्ड मैनेजर में संग्रहीत करें।"
+  },
+  "stxFailure": {
+    "message": "स्वैप विफल रहा"
   },
   "submit": {
     "message": "सबमिट करें"
@@ -2976,6 +3073,9 @@
   "syncWithThreeBoxDisabled": {
     "message": "प्रारंभिक सिंक के दौरान एक त्रुटि के कारण 3Box को अक्षम कर दिया गया है"
   },
+  "tenPercentIncreased": {
+    "message": "10% वृद्धि"
+  },
   "terms": {
     "message": "उपयोग की शर्तें"
   },
@@ -3019,6 +3119,9 @@
   },
   "tokenDetectionAnnouncement": {
     "message": "नया! प्रायोगिक फीचर के रूप में Ethereum Mainnet पर बेहतर टोकन डिटेक्शन उपलब्ध है। $1"
+  },
+  "tokenId": {
+    "message": "टोकन आईडी"
   },
   "tokenSymbol": {
     "message": "टोकन का प्रतीक"
@@ -3368,6 +3471,9 @@
   "xOfYPending": {
     "message": "$2 में से $1 लंबित",
     "description": "$1 and $2 are intended to be two numbers, where $2 is a total number of pending confirmations, and $1 is a count towards that total"
+  },
+  "yes": {
+    "message": "हां"
   },
   "yesLetsTry": {
     "message": "हां, आइए आजमाते हैं"

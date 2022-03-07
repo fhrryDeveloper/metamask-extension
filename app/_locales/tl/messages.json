@@ -188,6 +188,9 @@
   "aggregatorFeeCost": {
     "message": "Bayarin sa aggregator network"
   },
+  "airgapVaultTutorial": {
+    "message": " (Mga Tutorial)"
+  },
   "alertDisableTooltip": {
     "message": "Puwede itong baguhin sa \"Mga Setting > Mga Alerto\""
   },
@@ -401,6 +404,14 @@
   "cancelSpeedUp": {
     "message": "kanselahin o pabilisin ang transaksyon."
   },
+  "cancelSpeedUpLabel": {
+    "message": "Ang singil sa gas na ito ay magiging $1 ang orihinal.",
+    "description": "$1 is text 'replace' in bold"
+  },
+  "cancelSpeedUpTransactionTooltip": {
+    "message": "Sa $1 na transaksyon ang gas fee ay dapat tumaas nang hindi bababa sa 10% para ito ay makilala ng network.",
+    "description": "$1 is string 'cancel' or 'speed up'"
+  },
   "cancellationGasFee": {
     "message": "Bayarin sa Gasolina para sa Pagkansela"
   },
@@ -428,6 +439,10 @@
   },
   "close": {
     "message": "Isara"
+  },
+  "collectibleAddressError": {
+    "message": "Ang token na ito ay isang NFT. Idagdag sa $1",
+    "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
   },
   "confirm": {
     "message": "Kumpirmahin"
@@ -562,6 +577,9 @@
   },
   "contractInteraction": {
     "message": "Interaksyon ng Kontrata"
+  },
+  "convertTokenToNFTDescription": {
+    "message": "Natukoy namin na ang asset na ito ay isang NFT. Ang Metamask ay mayroon na ngayong ganap na native support para sa mga NFT. Gusto mo bang alisin ito sa iyong listahan ng token at idagdag ito bilang isang NFT?"
   },
   "copiedExclamation": {
     "message": "Nakopya na!"
@@ -706,6 +724,10 @@
   "details": {
     "message": "Mga Detalye"
   },
+  "disabledGasOptionToolTipMessage": {
+    "message": "Ang “$1” ay naka-disable dahil hindi nito naabot ang minimum na 10% na dagdag mula sa orihinal na singil sa gas.",
+    "description": "$1 is gas estimate type which can be market or aggressive"
+  },
   "disconnect": {
     "message": "Idiskonekta"
   },
@@ -759,6 +781,9 @@
   },
   "editAddressNickname": {
     "message": "I-edit ang address ng palayaw"
+  },
+  "editCancellationGasFeeModalTitle": {
+    "message": "I-edit ang pagkansela sa gas fee"
   },
   "editContact": {
     "message": "I-edit ang Contact"
@@ -879,8 +904,27 @@
   "editPermission": {
     "message": "Pahintulot sa Pag-edit"
   },
+  "editSpeedUpEditGasFeeModalTitle": {
+    "message": "I-edit ang pagpapabilis ng gas fee"
+  },
   "enableAutoDetect": {
     "message": " Paganahin ang Autodetect"
+  },
+  "enableEIP1559V2": {
+    "message": "Paganahin ang Pinahusay na Gas Fee UI"
+  },
+  "enableEIP1559V2AlertMessage": {
+    "message": "Na-update na namin kung paano gumagana ang pagtantiya at pag-customize."
+  },
+  "enableEIP1559V2ButtonText": {
+    "message": "I-on ang Pinahusay na Gas Fee UI sa Settings"
+  },
+  "enableEIP1559V2Description": {
+    "message": "Na-update na namin kung paano gumagana ang pagtantiya at pag-customize. I-on kung gusto mong gamitin ang bagong experience sa gas. $1",
+    "description": "$1 here is Learn More link"
+  },
+  "enableEIP1559V2Header": {
+    "message": "Bagong experience sa gas"
   },
   "enableFromSettings": {
     "message": " Paganahin ito mula sa Settings."
@@ -1071,6 +1115,26 @@
     "message": "mula sa",
     "description": "Part of the sentence describing when and where snap was added"
   },
+  "flaskWelcomeUninstall": {
+    "message": "dapat kang mag-uninstall ng extension na ito",
+    "description": "This request is shown on the Flask Welcome screen. It is intended for non-developers, and will be bolded."
+  },
+  "flaskWelcomeWarning1": {
+    "message": "Ang Flask ay para sa makapag-eksperimento ang mga developer ng bagong mahihinang API. Maliban kung isa kang developer o beta tester, $1.",
+    "description": "This is a warning shown on the Flask Welcome screen, intended to encourage non-developers not to proceed any further. $1 is the bolded message 'flaskWelcomeUninstall'"
+  },
+  "flaskWelcomeWarning2": {
+    "message": "Hindi namin ginagarantiya ang kaligtasan o katatagan ng extension na ito. Ang mga bagong API na inaalok ng Flask ay hindi pinatigtibay laban sa mga pag-atake ng phishing, ibig sabihin, ang anumang site o snap na nangangailangan ng Flask ay maaaring isang masamang pagtatangka na nakawin ang iyong mga asset.",
+    "description": "This explains the risks of using MetaMask Flask"
+  },
+  "flaskWelcomeWarning3": {
+    "message": "Ang lahat ng Flask API ay eksperimental. Maaaring baguhin o alisin ang mga ito nang walang abiso, o maaari silang manatili sa Flask nang walang katapusan nang hindi nalilipat sa stable na MetaMask. Gamitin ang mga ito sa iyong sariling pananagutan.",
+    "description": "This message warns developers about unstable Flask APIs"
+  },
+  "flaskWelcomeWarningAcceptButton": {
+    "message": "Tinatanggap ko ang mga panganib",
+    "description": "this text is shown on a button, which the user presses to confirm they understand the risks of using Flask"
+  },
   "followUsOnTwitter": {
     "message": "I-follow kami sa Twitter"
   },
@@ -1208,6 +1272,9 @@
   "grantedToWithColon": {
     "message": "Ipinagkaloob kay:"
   },
+  "gwei": {
+    "message": "GWEI"
+  },
   "happyToSeeYou": {
     "message": "Nagagalak kaming makilala ka."
   },
@@ -1289,6 +1356,18 @@
   "importMyWallet": {
     "message": "I-import ang Wallet Ko"
   },
+  "importNFT": {
+    "message": "Mag-import ng NFT"
+  },
+  "importNFTAddressToolTip": {
+    "message": "Sa OpenSea, halimbawa, sa page ng NFT sa ilalim ng Mga Detalye, mayroong asul na hyperlink na halaga na may label na 'Contract Address'. Kapag nag-click ka dito, dadalhin ka nito sa address ng contract sa Etherscan; sa kaliwang tuktok ng page na iyon, dapat mayroong icon na may label na 'Contract', at sa kanan, may mahabang sunod-sunod na letra at mga numero. Ito ang address ng contract na lumikha ng iyong NFT. Mag-click sa 'copy' icon sa kanan ng address, at makikita mo ito sa iyong clipboard."
+  },
+  "importNFTPage": {
+    "message": "I-import ang NFT page"
+  },
+  "importNFTTokenIdToolTip": {
+    "message": "Ang ID ng collectible ay isang naiibang identifier dahil walang dalawang NFT ang magkatulad. Muli, sa OpenSea ang numerong ito ay nasa ilalim ng 'Mga Detalye'. Itala ito, o kopyahin ito sa iyong clipboard."
+  },
   "importNFTs": {
     "message": "I-import ang mga NFT"
   },
@@ -1341,6 +1420,9 @@
   },
   "invalidAddressRecipientNotEthNetwork": {
     "message": "Hindi ETH network, itakda sa maliliit na letra"
+  },
+  "invalidAssetType": {
+    "message": "Ang asset na ito ay isang NFT at kailangang idagdag muli sa page ng Pag-import ng NFT na matatagpuan sa ilalim ng mga NFT tab"
   },
   "invalidBlockExplorerURL": {
     "message": "Hindi Valid ang URL ng Block Explorer"
@@ -1527,6 +1609,9 @@
   "mainnet": {
     "message": "Ethereum Mainnet"
   },
+  "mainnetToken": {
+    "message": "Ang address na ito ay tumutugma sa isang kilalang Ethereum Mainnet token address. Suriin muli ang address ng contract at network para sa token na sinusubukan mong idagdag."
+  },
   "makeAnotherSwap": {
     "message": "Gumawa ng bagong pag-swap"
   },
@@ -1677,6 +1762,9 @@
   },
   "networkDetails": {
     "message": "Mga Detalye ng Network"
+  },
+  "networkIsBusy": {
+    "message": "Busy ang network. Ang presyo ng gas ay mataas at ang pagtantiya ay hindi gaanong tumpak."
   },
   "networkName": {
     "message": "Pangalan ng Network"
@@ -2201,6 +2289,9 @@
   "removeNFT": {
     "message": "Tanggalin ang NFT"
   },
+  "replace": {
+    "message": "palitan"
+  },
   "requestsAwaitingAcknowledgement": {
     "message": "mga request na hinihintay na tanggapin"
   },
@@ -2407,6 +2498,9 @@
   "sendTokens": {
     "message": "Magpadala ng Mga Token"
   },
+  "sendingDisabled": {
+    "message": "Ang pagpapadala ng mga ERC-1155 NFT ay hindi pa suportado."
+  },
   "sendingNativeAsset": {
     "message": "Nagpapadala ng $1",
     "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
@@ -2601,6 +2695,9 @@
   },
   "storePhrase": {
     "message": "I-store ang phrase na ito sa isang password manager gaya ng 1Password."
+  },
+  "stxFailure": {
+    "message": "Hindi matagumpay ang pag-swap"
   },
   "submit": {
     "message": "Isumite"
@@ -2976,6 +3073,9 @@
   "syncWithThreeBoxDisabled": {
     "message": "Na-disable ang 3Box dahil sa isang error sa unang pag-sync"
   },
+  "tenPercentIncreased": {
+    "message": "10% na dagdag"
+  },
   "terms": {
     "message": "Mga Tuntunin ng Paggamit"
   },
@@ -3019,6 +3119,9 @@
   },
   "tokenDetectionAnnouncement": {
     "message": "Bago! Ang pinahusay na pagtukoy ng token ay magagamit sa Ethereum Mainnet bilang isang pang-eksperimentong feature. $1"
+  },
+  "tokenId": {
+    "message": "Token ID"
   },
   "tokenSymbol": {
     "message": "Simbolo ng Token"
@@ -3368,6 +3471,9 @@
   "xOfYPending": {
     "message": "$1 ng $2 ang nakabinbin",
     "description": "$1 and $2 are intended to be two numbers, where $2 is a total number of pending confirmations, and $1 is a count towards that total"
+  },
+  "yes": {
+    "message": "Yes"
   },
   "yesLetsTry": {
     "message": "Oo, subukan natin"

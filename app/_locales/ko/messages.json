@@ -188,6 +188,9 @@
   "aggregatorFeeCost": {
     "message": "애그리게이터 네트워크 수수료"
   },
+  "airgapVaultTutorial": {
+    "message": " (튜토리얼)"
+  },
   "alertDisableTooltip": {
     "message": "\"설정 > 경고\"에서 변경할 수 있습니다."
   },
@@ -401,6 +404,14 @@
   "cancelSpeedUp": {
     "message": "거래 취소 또는 속도 향상"
   },
+  "cancelSpeedUpLabel": {
+    "message": "이 가스 요금은 오리지널 요금을 $1합니다.",
+    "description": "$1 is text 'replace' in bold"
+  },
+  "cancelSpeedUpTransactionTooltip": {
+    "message": "거래를 $1하려면 반드시 가스 요금을 최소 10% 인상해야 네트워크에서 인식될 수 있습니다.",
+    "description": "$1 is string 'cancel' or 'speed up'"
+  },
   "cancellationGasFee": {
     "message": "가스 수수료 취소"
   },
@@ -428,6 +439,10 @@
   },
   "close": {
     "message": "닫기"
+  },
+  "collectibleAddressError": {
+    "message": "이 토큰은 NFT입니다. $1에 추가하세요",
+    "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
   },
   "confirm": {
     "message": "확인"
@@ -562,6 +577,9 @@
   },
   "contractInteraction": {
     "message": "계약 상호 작용"
+  },
+  "convertTokenToNFTDescription": {
+    "message": "이 자산은 NFT입니다. Metamask는 이제 NFT의 본래 기능에 따라 완전히 지원합니다. 이를 토큰 목록에서 제거하고 NFT로 추가할까요?"
   },
   "copiedExclamation": {
     "message": "복사 완료!"
@@ -706,6 +724,10 @@
   "details": {
     "message": "세부 정보"
   },
+  "disabledGasOptionToolTipMessage": {
+    "message": "“$1” 유형은 오리지널 가스 요금을 최소 10% 인상해야 하는 기준에 미치지 못하므로 비활성화되었습니다.",
+    "description": "$1 is gas estimate type which can be market or aggressive"
+  },
   "disconnect": {
     "message": "연결 해제"
   },
@@ -759,6 +781,9 @@
   },
   "editAddressNickname": {
     "message": "주소 닉네임 편집"
+  },
+  "editCancellationGasFeeModalTitle": {
+    "message": "가스 요금 취소 수정"
   },
   "editContact": {
     "message": "연락처 편집"
@@ -879,8 +904,27 @@
   "editPermission": {
     "message": "권한 편집"
   },
+  "editSpeedUpEditGasFeeModalTitle": {
+    "message": "가스 요금 추가 수정"
+  },
   "enableAutoDetect": {
     "message": " 자동 감지 활성화"
+  },
+  "enableEIP1559V2": {
+    "message": "향상된 가스 요금 UI 활성화"
+  },
+  "enableEIP1559V2AlertMessage": {
+    "message": "가스 요금 견적 산정 방법과 맞춤화 작업을 업데이트했습니다."
+  },
+  "enableEIP1559V2ButtonText": {
+    "message": "설정에서 향상된 가스 요금 UI 켜기"
+  },
+  "enableEIP1559V2Description": {
+    "message": "가스 요금 견적 산정 방법과 맞춤화 작업을 업데이트했습니다. 새로운 가스 경험을 사용하기 원하시면 이 기능을 켜세요. $1",
+    "description": "$1 here is Learn More link"
+  },
+  "enableEIP1559V2Header": {
+    "message": "새로운 가스 경험"
   },
   "enableFromSettings": {
     "message": " 설정에서 이 기능을 활성화합니다."
@@ -1071,6 +1115,26 @@
     "message": "발신",
     "description": "Part of the sentence describing when and where snap was added"
   },
+  "flaskWelcomeUninstall": {
+    "message": "이 확장자를 삭제해야 합니다",
+    "description": "This request is shown on the Flask Welcome screen. It is intended for non-developers, and will be bolded."
+  },
+  "flaskWelcomeWarning1": {
+    "message": "플라스크(Flask)는 개발자가 불안정한 신규 API를 실험하기 위한 것입니다. 개발자나 베타 테스터가 아니면 $1하세요.",
+    "description": "This is a warning shown on the Flask Welcome screen, intended to encourage non-developers not to proceed any further. $1 is the bolded message 'flaskWelcomeUninstall'"
+  },
+  "flaskWelcomeWarning2": {
+    "message": "이 확장은 안전성이나 안정성을 보장하지 않습니다. 플라스크에서 제공하는 새로운 API는 피싱 공격에 대비한 강화 과정을 거치지 않았습니다. 즉, 플라스크가 필요한 모든 사이트나 스냅은 자산을 훔치려는 악의적 시도일 수 있습니다.",
+    "description": "This explains the risks of using MetaMask Flask"
+  },
+  "flaskWelcomeWarning3": {
+    "message": "모든 플라스크의 API는 실험 단계입니다. 따라서 예고 없이 변경, 제거되거나 안정적인 MetaMask로 마이그레이션되지 않고 플라스크에 무기한 남아 있을 수 있습니다.",
+    "description": "This message warns developers about unstable Flask APIs"
+  },
+  "flaskWelcomeWarningAcceptButton": {
+    "message": "본인은 위험을 감수합니다",
+    "description": "this text is shown on a button, which the user presses to confirm they understand the risks of using Flask"
+  },
   "followUsOnTwitter": {
     "message": "트위터에서 팔로우하세요"
   },
@@ -1208,6 +1272,9 @@
   "grantedToWithColon": {
     "message": "부여 대상:"
   },
+  "gwei": {
+    "message": "GWEI"
+  },
   "happyToSeeYou": {
     "message": "반갑습니다."
   },
@@ -1289,6 +1356,18 @@
   "importMyWallet": {
     "message": "내 지갑 가져오기"
   },
+  "importNFT": {
+    "message": "NFT 가져오기"
+  },
+  "importNFTAddressToolTip": {
+    "message": "예를 들어 OpenSea의 NFT 페이지 세부 정보에는 '계약 주소'라는 파란색 하이퍼링크 값이 있습니다. 이를 클릭하면 Etherscan의 계약 주소로 이동합니다. 해당 페이지의 왼쪽 상단에는 '계약(Contract)'라고 표시된 아이콘이 있고 오른쪽으로 문자와 숫자로 구성된 긴 문자열이 있어야 합니다. 이것이 바로 NFT를 생성한 계약의 주소입니다. 주소 오른쪽의 '복사(Copy)' 아이콘을 클릭하면 이를 클립보드에 저장할 수 있습니다."
+  },
+  "importNFTPage": {
+    "message": "NFT 페이지 가져오기"
+  },
+  "importNFTTokenIdToolTip": {
+    "message": "수집물의 ID는 고유한 식별자이므로 ID가 동일한 NFT는 존재하지 않습니다. 다시 말하지만, OpenSea에서 이 번호는 '세부 정보(Details)' 아래에서 찾아보실 수 있습니다. 이를 기록하거나 클립보드에 복사해 두세요."
+  },
   "importNFTs": {
     "message": "NFT 가져오기"
   },
@@ -1341,6 +1420,9 @@
   },
   "invalidAddressRecipientNotEthNetwork": {
     "message": "ETH 네트워크가 아닙니다. 소문자로 설정하세요."
+  },
+  "invalidAssetType": {
+    "message": "이 자산은 NFT이므로 NFT 탭에 있는 NFT 가져오기 페이지에서 다시 추가해야 합니다"
   },
   "invalidBlockExplorerURL": {
     "message": "잘못된 블록 탐색기 URL"
@@ -1527,6 +1609,9 @@
   "mainnet": {
     "message": "이더리움 메인넷"
   },
+  "mainnetToken": {
+    "message": "이 주소는 알려진 이더리움 메인넷 토큰 주소와 일치합니다. 추가하기 원하는 토큰의 계약 주소와 네트워크를 다시 확인하세요."
+  },
   "makeAnotherSwap": {
     "message": "새 스왑 생성"
   },
@@ -1677,6 +1762,9 @@
   },
   "networkDetails": {
     "message": "네트워크 세부 정보"
+  },
+  "networkIsBusy": {
+    "message": "네트워크 사용량이 많습니다. 가스 가격이 높고 견적의 정확도도 떨어집니다."
   },
   "networkName": {
     "message": "네트워크 이름"
@@ -2201,6 +2289,9 @@
   "removeNFT": {
     "message": "NFT 제거"
   },
+  "replace": {
+    "message": "대체"
+  },
   "requestsAwaitingAcknowledgement": {
     "message": "확인 대기 중인 요청"
   },
@@ -2407,6 +2498,9 @@
   "sendTokens": {
     "message": "토큰 보내기"
   },
+  "sendingDisabled": {
+    "message": "ERC-1155 NFT 전송은 아직 지원되지 않습니다."
+  },
   "sendingNativeAsset": {
     "message": "$1 보내기",
     "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
@@ -2601,6 +2695,9 @@
   },
   "storePhrase": {
     "message": "이 구문을 1Password 같은 비밀번호 관리자에 저장하세요."
+  },
+  "stxFailure": {
+    "message": "스왑 실패"
   },
   "submit": {
     "message": "제출"
@@ -2976,6 +3073,9 @@
   "syncWithThreeBoxDisabled": {
     "message": "초기 동기화 도중 오류가 발생하여 3Box가 비활성화되었습니다."
   },
+  "tenPercentIncreased": {
+    "message": "10% 인상"
+  },
   "terms": {
     "message": "이용 약관"
   },
@@ -3019,6 +3119,9 @@
   },
   "tokenDetectionAnnouncement": {
     "message": "신규! 개선된 토큰 감지는 실험적 기능으로 이더리움 메인넷에서 사용할 수 있습니다. $1"
+  },
+  "tokenId": {
+    "message": "토큰 ID"
   },
   "tokenSymbol": {
     "message": "토큰 기호"
@@ -3368,6 +3471,9 @@
   "xOfYPending": {
     "message": "$1/$2개 보류 중",
     "description": "$1 and $2 are intended to be two numbers, where $2 is a total number of pending confirmations, and $1 is a count towards that total"
+  },
+  "yes": {
+    "message": "예"
   },
   "yesLetsTry": {
     "message": "예, 시도하겠습니다."

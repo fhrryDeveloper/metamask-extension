@@ -1702,6 +1702,9 @@
   "storePhrase": {
     "message": "Guarde esta frase en un administrador de contraseñas como 1Password."
   },
+  "stxFailure": {
+    "message": "Error al canjear"
+  },
   "submit": {
     "message": "Enviar"
   },

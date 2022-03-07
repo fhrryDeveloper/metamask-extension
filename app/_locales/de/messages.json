@@ -188,6 +188,9 @@
   "aggregatorFeeCost": {
     "message": "Aggregator-Netzwerkgebühr"
   },
+  "airgapVaultTutorial": {
+    "message": " (Tutorials)"
+  },
   "alertDisableTooltip": {
     "message": "Dies kann in \"Einstellungen > Warnungen\" geändert werden"
   },
@@ -437,6 +440,10 @@
   "close": {
     "message": "Schließen"
   },
+  "collectibleAddressError": {
+    "message": "Dieser Token ist ein NFT. Hinzufügen auf $1",
+    "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
+  },
   "confirm": {
     "message": "Bestätigen"
   },
@@ -570,6 +577,9 @@
   },
   "contractInteraction": {
     "message": "Vertragsinteraktion"
+  },
+  "convertTokenToNFTDescription": {
+    "message": "Wir haben festgestellt, dass dieses Asset ein NFT ist. Metamask hat nun volle native Unterstützung für NFTs. Möchten Sie es von Ihrer Tokenliste entfernen und als NFT hinzufügen?"
   },
   "copiedExclamation": {
     "message": "Kopiert!"
@@ -896,6 +906,22 @@
   "enableAutoDetect": {
     "message": " Auto-Erkennung aktivieren"
   },
+  "enableEIP1559V2": {
+    "message": "Erweiterte Gas Fee-Oberfläche aktivieren"
+  },
+  "enableEIP1559V2AlertMessage": {
+    "message": "Wir haben die Funktionsweise der Gas Fee-Schätzung und -Anpassung aktualisiert."
+  },
+  "enableEIP1559V2ButtonText": {
+    "message": "Erweiterte Gas Fee-Oberfläche in den Einstellungen einschalten"
+  },
+  "enableEIP1559V2Description": {
+    "message": "Wir haben die Funktionsweise der Gas Fee-Schätzung und -Anpassung aktualisiert. Aktiviere es, um das neue Gas Fee-Erlebnis zu nutzen. $1",
+    "description": "$1 here is Learn More link"
+  },
+  "enableEIP1559V2Header": {
+    "message": "Neues Gas-Erlebnis"
+  },
   "enableFromSettings": {
     "message": " In den Einstellungen aktivieren."
   },
@@ -1081,6 +1107,26 @@
     "message": "von",
     "description": "Part of the sentence describing when and where snap was added"
   },
+  "flaskWelcomeUninstall": {
+    "message": "Diese Erweiterung sollte deinstalliert werden",
+    "description": "This request is shown on the Flask Welcome screen. It is intended for non-developers, and will be bolded."
+  },
+  "flaskWelcomeWarning1": {
+    "message": "Flask ist für Entwickler zum Experimentieren mit neuen instabilen APIs gedacht. Wenn du also kein Entwickler oder Beta-Tester bist... $1.",
+    "description": "This is a warning shown on the Flask Welcome screen, intended to encourage non-developers not to proceed any further. $1 is the bolded message 'flaskWelcomeUninstall'"
+  },
+  "flaskWelcomeWarning2": {
+    "message": "Wir übernehmen keine Garantie für die Sicherheit oder Stabilität dieser Erweiterung. Die neuen APIs, die Flask anbietet, sind nicht gegen Phishing-Angriffe gewappnet. Das bedeutet, dass jede Website oder jeder Snap, der Flask verwendet, ein böswilliger Versuch sein könnte, dein Vermögen zu stehlen.",
+    "description": "This explains the risks of using MetaMask Flask"
+  },
+  "flaskWelcomeWarning3": {
+    "message": "Alle Flask-APIs sind experimentell. Sie können ohne Vorankündigung geändert oder entfernt werden. Möglicherweise bleiben sie auf unbestimmte Zeit in Flask, ohne jemals in die stabile MetaMask migriert zu werden. Die Nutzung erfolgt auf eigene Gefahr.",
+    "description": "This message warns developers about unstable Flask APIs"
+  },
+  "flaskWelcomeWarningAcceptButton": {
+    "message": "Ich akzeptiere die Risiken",
+    "description": "this text is shown on a button, which the user presses to confirm they understand the risks of using Flask"
+  },
   "followUsOnTwitter": {
     "message": "Folgen Sie uns auf Twitter"
   },
@@ -1218,6 +1264,9 @@
   "grantedToWithColon": {
     "message": "Ermöglicht zu:"
   },
+  "gwei": {
+    "message": "GWEI"
+  },
   "happyToSeeYou": {
     "message": "Wir freuen uns, Sie zu sehen."
   },
@@ -1295,6 +1344,18 @@
   "importMyWallet": {
     "message": "Meine Wallet importieren"
   },
+  "importNFT": {
+    "message": "NFT importieren"
+  },
+  "importNFTAddressToolTip": {
+    "message": "Auf OpenSea gibt es zum Beispiel auf der NFT-Seite unter \"Details\" einen blauen Hyperlink mit der Bezeichnung \"Vertragsadresse\". Wenn du darauf klickst, wirst du zur Adresse des Vertrags auf Etherscan weitergeleitet. Oben links auf der Seite sollte ein Symbol mit der Aufschrift \"Vertrag\" zu sehen sein, und rechts daneben eine lange Reihe von Buchstaben und Zahlen. Dies ist die Adresse des Vertrags, der dein NFT erstellt hat. Klicke auf das \"Kopieren\"-Symbol rechts neben der Adresse und schon hast du sie in deiner Zwischenablage."
+  },
+  "importNFTPage": {
+    "message": "NFT-Seite importieren"
+  },
+  "importNFTTokenIdToolTip": {
+    "message": "Die ID eines Sammelobjekts ist ein eindeutiger Identifikator, da keine zwei NFTs gleich sind. Auch diese Nummer findest du in OpenSea unter \"Details\". Notiere sie oder kopiere sie in deine Zwischenablage."
+  },
   "importNFTs": {
     "message": "NFTs importieren"
   },
@@ -1347,6 +1408,9 @@
   },
   "invalidAddressRecipientNotEthNetwork": {
     "message": "Kein ETH-Netzwerk, auf Kleinschreibung gesetzt"
+  },
+  "invalidAssetType": {
+    "message": "Dieses Asset ist ein NFT und muss auf der Seite NFTs importieren unter der Registerkarte NFTs neu hinzugefügt werden"
   },
   "invalidBlockExplorerURL": {
     "message": "Ungültige Block Explorer URI"
@@ -1527,6 +1591,9 @@
   "mainnet": {
     "message": "Athereum Hauptnetz"
   },
+  "mainnetToken": {
+    "message": "Diese Adresse stimmt mit einer bekannten Ethereum Mainnet Token-Adresse überein. Überprüfe noch einmal die Vertragsadresse und das Netzwerk für den Token, den du hinzufügen möchtest."
+  },
   "makeAnotherSwap": {
     "message": "Eine neue Wallet erstellen"
   },
@@ -1678,6 +1745,9 @@
   "networkDetails": {
     "message": "Netzwerkdetails"
   },
+  "networkIsBusy": {
+    "message": "Das Netzwerk ist ausgelastet. Die Gas-Preise sind hoch und die Schätzungen sind weniger genau."
+  },
   "networkName": {
     "message": "Netzwerkname"
   },
@@ -1777,6 +1847,9 @@
   "nextNonceWarning": {
     "message": "Nonce ist höher als vorgeschlagen nonce von $1",
     "description": "The next nonce according to MetaMask's internal logic"
+  },
+  "nftTokenIdPlaceholder": {
+    "message": "Token-ID eingeben"
   },
   "nfts": {
     "message": "NFTs"
@@ -2358,6 +2431,9 @@
   "selectAHigherGasFee": {
     "message": "Wählen Sie eine höhere Gasgebühr, um die Abwicklung Ihrer Transaktion zu beschleunigen.*"
   },
+  "selectAccounts": {
+    "message": "Wähle das/die Konto/Konten aus, die auf dieser Seite verwenden werden sollen"
+  },
   "selectAll": {
     "message": "\nAlle auswählen"
   },
@@ -2400,6 +2476,9 @@
   },
   "sendTokens": {
     "message": "Token senden"
+  },
+  "sendingDisabled": {
+    "message": "Das Senden von ERC-1155 NFT-Assets wird noch nicht unterstützt."
   },
   "sendingNativeAsset": {
     "message": "$1 senden",
@@ -2595,6 +2674,9 @@
   },
   "storePhrase": {
     "message": "Speichern Sie diesen Schlüssel in einem Passwortmanager wie 1Password."
+  },
+  "stxFailure": {
+    "message": "Swap fehlgeschlagen"
   },
   "submit": {
     "message": "Abschicken"
@@ -3017,6 +3099,9 @@
   "tokenDetectionAnnouncement": {
     "message": "Neu! Verbesserte Token Erkennung ist im Ethereum Mainnet als experimentelle Funktion verfügbar. $1"
   },
+  "tokenId": {
+    "message": "Token-ID"
+  },
   "tokenSymbol": {
     "message": "Tokensymbol"
   },
@@ -3365,6 +3450,9 @@
   "xOfYPending": {
     "message": "$1 von $2 ausstehend",
     "description": "$1 and $2 are intended to be two numbers, where $2 is a total number of pending confirmations, and $1 is a count towards that total"
+  },
+  "yes": {
+    "message": "Ja"
   },
   "yesLetsTry": {
     "message": "Ja, versuchen wir es"

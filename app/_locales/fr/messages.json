@@ -188,6 +188,9 @@
   "aggregatorFeeCost": {
     "message": "Frais de réseau de l’agrégateur"
   },
+  "airgapVaultTutorial": {
+    "message": " (Tutoriels)"
+  },
   "alertDisableTooltip": {
     "message": "Vous pouvez modifier ceci dans « Paramètres > Alertes »"
   },
@@ -277,7 +280,7 @@
     "message": "Faire une demande d’annulation ne garantit pas que votre transaction originale sera bien annulée. Dans le cas où l’annulation réussit, vous payerez les frais de transaction indiqués ci-dessus."
   },
   "attemptingConnect": {
-    "message": "Tentative de connexion au réseau"
+    "message": "Tentative de connexion au réseau."
   },
   "attributions": {
     "message": "Attributions"
@@ -746,7 +749,7 @@
     "message": "Téléchargez cette phrase de sauvegarde secrète et conservez-la en lieu sûr sur un disque dur ou un support de stockage externe chiffré."
   },
   "downloadStateLogs": {
-    "message": "Télécharger les Logs d'état"
+    "message": "Télécharger les Logs d’état"
   },
   "dropped": {
     "message": "Déconnecté"
@@ -828,10 +831,10 @@
     "message": "Les frais de priorité doivent être supérieurs à 0."
   },
   "editGasMaxPriorityFeeHigh": {
-    "message": "Les frais de priorité maximaux sont plus élevés que nécessaire. Vous risquez de payer plus que nécessaire."
+    "message": "Les frais de priorité maximaux sont plus élevés que nécessaire. Vous risquez de payer plus que prévu."
   },
   "editGasMaxPriorityFeeHighV2": {
-    "message": "Les frais de priorité sont plus élevés que nécessaire. Vous risquez de payer plus que nécessaire"
+    "message": "Les frais de priorité maximaux sont plus élevés que nécessaire. Vous risquez de payer plus que prévu"
   },
   "editGasMaxPriorityFeeLow": {
     "message": "Les frais de priorité maximaux sont faibles par rapport aux conditions actuelles du réseau"
@@ -1228,7 +1231,7 @@
     "message": "Connecter un portefeuille matériel"
   },
   "hardwareWalletsMsg": {
-    "message": "Selectionnez le portefeuille matériel que vous voulez utiliser avec MetaMask"
+    "message": "Selectionnez le portefeuille matériel que vous voulez utiliser avec MetaMask."
   },
   "here": {
     "message": "ici",
@@ -2601,6 +2604,9 @@
   },
   "storePhrase": {
     "message": "Stockez cette phrase dans un gestionnaire de mots de passe comme 1Password."
+  },
+  "stxFailure": {
+    "message": "Échec du swap"
   },
   "submit": {
     "message": "Envoyer"

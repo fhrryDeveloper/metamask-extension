@@ -1371,6 +1371,9 @@
   "storePhrase": {
     "message": "Conserva questa frase in un gestore di password come 1Password."
   },
+  "stxFailure": {
+    "message": "Scambio fallito"
+  },
   "submit": {
     "message": "Invia"
   },

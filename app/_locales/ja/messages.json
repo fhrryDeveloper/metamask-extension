@@ -188,6 +188,9 @@
   "aggregatorFeeCost": {
     "message": "アグリゲーター ネットワーク料金"
   },
+  "airgapVaultTutorial": {
+    "message": "(チュートリアル)"
+  },
   "alertDisableTooltip": {
     "message": "これは、[設定 > 警告] で変更できます"
   },
@@ -401,6 +404,14 @@
   "cancelSpeedUp": {
     "message": "トランザクションをキャンセルまたはスピードアップ"
   },
+  "cancelSpeedUpLabel": {
+    "message": "このガス代は元の$1になります。",
+    "description": "$1 is text 'replace' in bold"
+  },
+  "cancelSpeedUpTransactionTooltip": {
+    "message": "トランザクションを$1するには、ネットワークに認識されるようガス代を10%以上増やす必要があります。",
+    "description": "$1 is string 'cancel' or 'speed up'"
+  },
   "cancellationGasFee": {
     "message": "キャンセルのガス代"
   },
@@ -428,6 +439,10 @@
   },
   "close": {
     "message": "閉じる"
+  },
+  "collectibleAddressError": {
+    "message": "このトークンはNFTです。$1に追加してください",
+    "description": "$1 is a clickable link with text defined by the 'importNFTPage' key"
   },
   "confirm": {
     "message": "確認"
@@ -562,6 +577,9 @@
   },
   "contractInteraction": {
     "message": "コントラクトインタラクション"
+  },
+  "convertTokenToNFTDescription": {
+    "message": "この資産がNFTであることが検出されました。MetamaskはNFTを完全にネイティブでサポートしています。トークンリストから削除し、NFTとして追加しますか？"
   },
   "copiedExclamation": {
     "message": "コピーされました！"
@@ -706,6 +724,10 @@
   "details": {
     "message": "詳細"
   },
+  "disabledGasOptionToolTipMessage": {
+    "message": "「$1」は、元のガス代から最低10%の増加条件を満たしていないため、無効になっています。",
+    "description": "$1 is gas estimate type which can be market or aggressive"
+  },
   "disconnect": {
     "message": "接続解除"
   },
@@ -759,6 +781,9 @@
   },
   "editAddressNickname": {
     "message": "アドレスのニックネームを編集"
+  },
+  "editCancellationGasFeeModalTitle": {
+    "message": "キャンセル用のガス代を変更"
   },
   "editContact": {
     "message": "連絡先を編集"
@@ -879,8 +904,27 @@
   "editPermission": {
     "message": "アクセス許可の編集"
   },
+  "editSpeedUpEditGasFeeModalTitle": {
+    "message": "スピードアップ用のガス代を変更"
+  },
   "enableAutoDetect": {
     "message": " 自動検出を有効にする"
+  },
+  "enableEIP1559V2": {
+    "message": "拡張ガス代UIを有効にする"
+  },
+  "enableEIP1559V2AlertMessage": {
+    "message": "ガス代の見積もりとカスタマイズの仕組みがアップデートされました。"
+  },
+  "enableEIP1559V2ButtonText": {
+    "message": "拡張ガス代UIをオンにする"
+  },
+  "enableEIP1559V2Description": {
+    "message": "ガスの見積もりとカスタマイズの仕組みがアップデートされました。新しいガスエクスペリエンスを利用するにはオンにしてください。$1",
+    "description": "$1 here is Learn More link"
+  },
+  "enableEIP1559V2Header": {
+    "message": "新しいガスエクスペリエンス"
   },
   "enableFromSettings": {
     "message": " 設定で有効にします。"
@@ -1071,6 +1115,26 @@
     "message": "元",
     "description": "Part of the sentence describing when and where snap was added"
   },
+  "flaskWelcomeUninstall": {
+    "message": "この拡張機能をアンインストールしてください",
+    "description": "This request is shown on the Flask Welcome screen. It is intended for non-developers, and will be bolded."
+  },
+  "flaskWelcomeWarning1": {
+    "message": "Flaskを使用すると、開発者が新しい不安定なAPIを試すことができます。開発者またはベータテスターでない限り、$1。",
+    "description": "This is a warning shown on the Flask Welcome screen, intended to encourage non-developers not to proceed any further. $1 is the bolded message 'flaskWelcomeUninstall'"
+  },
+  "flaskWelcomeWarning2": {
+    "message": "この拡張機能の安全性や安定性は保証されていません。Flaskが提供する新しいAPIは、フィッシング攻撃に対してしっかりと保護されていません。つまり、Flaskを必要とするサイトやスナップは、資産を盗もうとする悪意のある試みである可能性があります。",
+    "description": "This explains the risks of using MetaMask Flask"
+  },
+  "flaskWelcomeWarning3": {
+    "message": "Flask APIはすべて実験的なもので、通知なく変更または削除される可能性があります。また、安定したMetaMaskに移行されずにFlaskのままになる可能性もあります。自己責任でご利用ください。",
+    "description": "This message warns developers about unstable Flask APIs"
+  },
+  "flaskWelcomeWarningAcceptButton": {
+    "message": "リスクを受け入れます",
+    "description": "this text is shown on a button, which the user presses to confirm they understand the risks of using Flask"
+  },
   "followUsOnTwitter": {
     "message": "Twitterでフォロー"
   },
@@ -1208,6 +1272,9 @@
   "grantedToWithColon": {
     "message": "付与先:"
   },
+  "gwei": {
+    "message": "GWEI"
+  },
   "happyToSeeYou": {
     "message": "お会いできてうれしいです。"
   },
@@ -1289,6 +1356,18 @@
   "importMyWallet": {
     "message": "ウォレットをインポート"
   },
+  "importNFT": {
+    "message": "NFTをインポート"
+  },
+  "importNFTAddressToolTip": {
+    "message": "たとえばOpenSeaの場合、詳細の下のNFTのページに、「コントラクトアドレス」というラベルが付いた、青いハイパーリンクされた値があります。これをクリックすると、Etherscanのコントラクトのアドレスに移動します。そのページの左上に「コントラクト」というラベルのアイコンがあり、右側には長い文字と数字の組み合わせが表示されます。これがNFTを作成したコントラクトのアドレスです。アドレスの右にある「コピー」アイコンをクリックすると、クリップボードにコピーされます。"
+  },
+  "importNFTPage": {
+    "message": "NFTページをインポート"
+  },
+  "importNFTTokenIdToolTip": {
+    "message": "類似したNFTは2つとないため、コレクションのIDは一意の識別子となります。繰り返しになりますが、OpenSeaでは、この番号は「詳細」の下にあります。メモをとるか、クリップボードにコピーしてください。"
+  },
   "importNFTs": {
     "message": "NFTをインポート"
   },
@@ -1341,6 +1420,9 @@
   },
   "invalidAddressRecipientNotEthNetwork": {
     "message": "ETHネットワークではなく、小文字に設定します"
+  },
+  "invalidAssetType": {
+    "message": "この資産はNFTであり、NFTタブにあるNFTのインポートページに再度追加する必要があります"
   },
   "invalidBlockExplorerURL": {
     "message": "無効なBlock Explorer URLです"
@@ -1527,6 +1609,9 @@
   "mainnet": {
     "message": "イーサリアムメインネット"
   },
+  "mainnetToken": {
+    "message": "このアドレスは既知のEthereum Mainnetトークンアドレスと一致しています。追加しようとしているトークンのコントラクトアドレスとネットワークを再度確認してください。"
+  },
   "makeAnotherSwap": {
     "message": "新しいスワップの作成"
   },
@@ -1677,6 +1762,9 @@
   },
   "networkDetails": {
     "message": "ネットワークの詳細"
+  },
+  "networkIsBusy": {
+    "message": "ネットワークが混雑しています。ガス代が高く、見積もりはあまり正確ではありません。"
   },
   "networkName": {
     "message": "ネットワーク名"
@@ -2201,6 +2289,9 @@
   "removeNFT": {
     "message": "NFTを削除"
   },
+  "replace": {
+    "message": "置き換える"
+  },
   "requestsAwaitingAcknowledgement": {
     "message": "承認されるまで待機の要求"
   },
@@ -2407,6 +2498,9 @@
   "sendTokens": {
     "message": "トークンを送信"
   },
+  "sendingDisabled": {
+    "message": "ERC-1155 NFTアセットの送信はまだサポートされていません。"
+  },
   "sendingNativeAsset": {
     "message": "$1を送信中",
     "description": "$1 represents the native currency symbol for the current network (e.g. ETH or BNB)"
@@ -2601,6 +2695,9 @@
   },
   "storePhrase": {
     "message": "このフレーズを1Passwordのようなパスワードマネージャーに保存します。"
+  },
+  "stxFailure": {
+    "message": "スワップに失敗しました"
   },
   "submit": {
     "message": "送信"
@@ -2976,6 +3073,9 @@
   "syncWithThreeBoxDisabled": {
     "message": "3Boxは、最初の同期中のエラーのため、無効化されました"
   },
+  "tenPercentIncreased": {
+    "message": "10%増加"
+  },
   "terms": {
     "message": "利用規約"
   },
@@ -3019,6 +3119,9 @@
   },
   "tokenDetectionAnnouncement": {
     "message": "新機能! 実験的な機能として、Ethereum Mainnetでのトークン検出が改善されました。$1"
+  },
+  "tokenId": {
+    "message": "トークンID"
   },
   "tokenSymbol": {
     "message": "トークンシンボル"
@@ -3368,6 +3471,9 @@
   "xOfYPending": {
     "message": "$2中$1が保留中",
     "description": "$1 and $2 are intended to be two numbers, where $2 is a total number of pending confirmations, and $1 is a count towards that total"
+  },
+  "yes": {
+    "message": "はい"
   },
   "yesLetsTry": {
     "message": "はい、やってみます"
