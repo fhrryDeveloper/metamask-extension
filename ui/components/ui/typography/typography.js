@@ -23,6 +23,7 @@ export default function Typography({
   fontStyle = 'normal',
   align,
   overflowWrap,
+  title,
   boxProps = {},
   margin = [1, 0],
 }) {
@@ -50,7 +51,10 @@ export default function Typography({
   return (
     <Box margin={margin} {...boxProps}>
       {(boxClassName) => (
-        <Tag className={classnames(boxClassName, computedClassName)}>
+        <Tag
+          className={classnames(boxClassName, computedClassName)}
+          title={title}
+        >
           {children}
         </Tag>
       )}
@@ -63,6 +67,7 @@ Typography.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.oneOf(Object.values(COLORS)),
   className: PropTypes.string,
+  title: PropTypes.string,
   align: PropTypes.oneOf(Object.values(TEXT_ALIGN)),
   boxProps: PropTypes.shape({
     ...Box.propTypes,
