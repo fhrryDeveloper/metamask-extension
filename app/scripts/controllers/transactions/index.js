@@ -378,13 +378,43 @@ export default class TransactionController extends EventEmitter {
   /**
    *
    * @param {string} txId - transaction id
+   * @param {object} previousGasParams - holds the parameter to update
+   * @param {string} previousGasParams.maxFeePerGas
+   * @param {string} previousGasParams.maxPriorityFeePerGas
+   * @param {string} previousGasParams.gasLimit
+   */
+  updatePreviousGasParams(
+    txId,
+    { maxFeePerGas, maxPriorityFeePerGas, gasLimit },
+  ) {
+    if (!this._checkIfTxStatusIsUnapproved(txId)) {
+      return;
+    }
+
+    const previousGasParams = {
+      previousGas: {
+        maxFeePerGas,
+        maxPriorityFeePerGas,
+        gasLimit,
+      },
+    };
+
+    // only update what is defined
+    previousGasParams.previousGas = pickBy(previousGasParams.previousGas);
+    const note = `Update Previous Gas for ${txId}`;
+    this._updateTransaction(txId, previousGasParams, note);
+  }
+
+  /**
+   *
+   * @param {string} txId - transaction id
    * @param {object} editableParams - holds the eip1559 fees parameters
-   * @param editableParams.data
-   * @param editableParams.from
-   * @param editableParams.to
-   * @param editableParams.value
-   * @param editableParams.gas
-   * @param editableParams.gasPrice
+   * @param {object} editableParams.data
+   * @param {string} editableParams.from
+   * @param {string} editableParams.to
+   * @param {string} editableParams.value
+   * @param {string} editableParams.gas
+   * @param {string} editableParams.gasPrice
    */
   updateEditableParams(txId, { data, from, to, value, gas, gasPrice }) {
     if (!this._checkIfTxStatusIsUnapproved(txId)) {
@@ -421,15 +451,15 @@ export default class TransactionController extends EventEmitter {
    * estimateUsed,
    * estimateSuggested
    * }
-   * @param txGasFees.gasLimit
-   * @param txGasFees.gasPrice
-   * @param txGasFees.maxPriorityFeePerGas
-   * @param txGasFees.maxFeePerGas
-   * @param txGasFees.estimateUsed
-   * @param txGasFees.estimateSuggested
-   * @param txGasFees.defaultGasEstimates
-   * @param txGasFees.gas
-   * @param txGasFees.originalGasEstimate
+   * @param {string} txGasFees.gasLimit
+   * @param {string} txGasFees.gasPrice
+   * @param {string} txGasFees.maxPriorityFeePerGas
+   * @param {string} txGasFees.maxFeePerGas
+   * @param {string} txGasFees.estimateUsed
+   * @param {string} txGasFees.estimateSuggested
+   * @param {string} txGasFees.defaultGasEstimates
+   * @param {string} txGasFees.gas
+   * @param {string} txGasFees.originalGasEstimate
    */
   updateTransactionGasFees(
     txId,
@@ -475,12 +505,8 @@ export default class TransactionController extends EventEmitter {
    *
    * @param {string} txId - transaction id
    * @param {object} txEstimateBaseFees - holds the estimate base fees parameters
-   * {
-   * estimatedBaseFee,
-   * decEstimatedBaseFee
-   * }
-   * @param txEstimateBaseFees.estimatedBaseFee
-   * @param txEstimateBaseFees.decEstimatedBaseFee
+   * @param {string} txEstimateBaseFees.estimatedBaseFee
+   * @param {string} txEstimateBaseFees.decEstimatedBaseFee
    */
   updateTransactionEstimatedBaseFee(
     txId,
@@ -504,12 +530,8 @@ export default class TransactionController extends EventEmitter {
    *
    * @param {string} txId
    * @param {object} swapApprovalTransaction - holds the metadata and token symbol
-   * {
-   * type,
-   * sourceTokenSymbol
-   * }
-   * @param swapApprovalTransaction.type
-   * @param swapApprovalTransaction.sourceTokenSymbol
+   * @param {string} swapApprovalTransaction.type
+   * @param {string} swapApprovalTransaction.sourceTokenSymbol
    */
   updateSwapApprovalTransaction(txId, { type, sourceTokenSymbol }) {
     if (!this._checkIfTxStatusIsUnapproved(txId)) {
@@ -530,26 +552,15 @@ export default class TransactionController extends EventEmitter {
    *
    * @param {string} txId
    * @param {object} swapTransaction - holds the metadata
-   * {
-   * sourceTokenSymbol,
-   * destinationTokenSymbol,
-   * type,
-   * destinationTokenDecimals,
-   * destinationTokenAddress,
-   * swapMetaData,
-   * swapTokenValue,
-   * estimatedBaseFee,
-   * approvalTxId
-   *}
-   * @param swapTransaction.sourceTokenSymbol
-   * @param swapTransaction.destinationTokenSymbol
-   * @param swapTransaction.type
-   * @param swapTransaction.destinationTokenDecimals
-   * @param swapTransaction.destinationTokenAddress
-   * @param swapTransaction.swapMetaData
-   * @param swapTransaction.swapTokenValue
-   * @param swapTransaction.estimatedBaseFee
-   * @param swapTransaction.approvalTxId
+   * @param {string} swapTransaction.sourceTokenSymbol
+   * @param {string} swapTransaction.destinationTokenSymbol
+   * @param {string} swapTransaction.type
+   * @param {string} swapTransaction.destinationTokenDecimals
+   * @param {string} swapTransaction.destinationTokenAddress
+   * @param {string} swapTransaction.swapMetaData
+   * @param {string} swapTransaction.swapTokenValue
+   * @param {string} swapTransaction.estimatedBaseFee
+   * @param {string} swapTransaction.approvalTxId
    */
   updateSwapTransaction(
     txId,
@@ -593,9 +604,8 @@ export default class TransactionController extends EventEmitter {
    *
    * @param {string} txId
    * @param {object} userSettings - holds the metadata
-   * { userEditedGasLimit, userFeeLevel }
-   * @param userSettings.userEditedGasLimit
-   * @param userSettings.userFeeLevel
+   * @param {string} userSettings.userEditedGasLimit
+   * @param {string} userSettings.userFeeLevel
    */
   updateTransactionUserSettings(txId, { userEditedGasLimit, userFeeLevel }) {
     if (!this._checkIfTxStatusIsUnapproved(txId)) {

@@ -1525,6 +1525,10 @@ export default class MetamaskController extends EventEmitter {
         txController,
       ),
 
+      updatePreviousGasParams: txController.updateTransactionGasFees.bind(
+        txController,
+      ),
+
       updateTransactionUserSettings: txController.updateTransactionUserSettings.bind(
         txController,
       ),

@@ -11,6 +11,7 @@ import {
   createCancelTransaction,
   createSpeedUpTransaction,
   updateCustomSwapsEIP1559GasParams,
+  updatePreviousGasParams,
   updateSwapsUserFeeLevel,
   updateTransactionGasFees,
   updateTransactionUserSettings,
@@ -91,6 +92,13 @@ export const useTransactionFunctions = ({
         const userSettings = {};
         userSettings.userEditedGasLimit = updatedTxMeta.userEditedGasLimit;
         userSettings.userFeeLevel = updatedTxMeta.userFeeLevel;
+
+        if (txMeta && txMeta.previousGas) {
+          dispatch(
+            updatePreviousGasParams(updatedTxMeta.id, txMeta.previousGas),
+          );
+        }
+
         dispatch(updateTransactionGasFees(updatedTxMeta.id, newGasSettings));
         dispatch(updateTransactionUserSettings(updatedTxMeta.id, userSettings));
       }
